@@ -17,7 +17,7 @@ public class Insertion {
             int min = i;
             for (int j = i; j > 0; j--) {
                 if (a[j].compareTo(a[j - 1]) < 0) {
-                    Comparable tmp = a[j];
+                    Comparable tmp = a[j - 1];
                     a[j - 1] = a[j];
                     a[j] = tmp;
                 }
@@ -27,7 +27,7 @@ public class Insertion {
 
     public static void main(String[] args) {
         Integer[] a = new Integer[]{2, 6, 3, 5, 77, 11, 12, 18, 15};
-        Selection.sort(a);
+        Insertion.sort(a);
         System.out.println(Arrays.toString(a));
     }
 }
