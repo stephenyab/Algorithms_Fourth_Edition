@@ -14,7 +14,6 @@ public class Insertion {
     public static void sort(Comparable[] a) {
         int length = a.length;
         for (int i = 0; i < length; i++) {
-            int min = i;
             for (int j = i; j > 0; j--) {
                 if (a[j].compareTo(a[j - 1]) < 0) {
                     Comparable tmp = a[j - 1];
